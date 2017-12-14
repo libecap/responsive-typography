@@ -24,6 +24,7 @@ body {
   padding: 1rem;
   margin: 0;
 }
+
 article {
   max-width: 43em;
 }
@@ -38,6 +39,11 @@ article header {
   border-bottom: 1px solid #999;
 }
 
+article p {
+  margin-top: 0;
+  margin-bottom: 1.3em;
+}
+
 article header p {
   font-style: italic;
   margin-top: 0;
@@ -46,11 +52,6 @@ article header p {
 
 p:nth-last-child(7) {
   padding-top: 1.3em;
-}
-
-article p {
-  margin-top: 0;
-  margin-bottom: 1.3em
 }
 
 article > p:last-child {
@@ -68,51 +69,49 @@ blockquote {
 .quote {
   color: #999;
 }
+
 span:first-child {
   position: absolute;
   right: 18.7em;
 }
 
-ol {
+article ol {
   padding-left: 1rem;
 }
 
 @media only screen and (min-width: 35em) {
- 
+
   article header p {
-  padding-top: .2em;  
+    padding-top: .2em;
   }
 }
-  
+
 @media only screen and (min-width: 38em) {
 
   html {
-    font-size: 1.1rem;
+    font-size: 110%;
+    line-height: 1.4;
   }
-  
+
   article p {
     line-height: 1.4em;
   }
-  
-  header p {
-  margin-top: rem;
-  }
-  
+
   span:first-of-type {
     position: absolute;
     left: 3.1em;
   }
-  
+
   blockquote {
     margin-left: 2.5em;
     padding: 0;
 
   }
-  
-  article > p:last-child {
-  padding-bottom: 1.3rem;
+
+  article > p:nth-last-child(1) {
+    padding-bottom: 1.3rem;
   }
-  
+
   p:nth-last-child(7) {
     padding-top: 1.5em;
     padding-bottom: .7em;
@@ -121,53 +120,53 @@ ol {
 
 @media only screen and (min-width: 60em) {
 
-  
   html {
-    font-size: 1.2rem;
+    font-size: 120%;
+    line-height: 1.5;
   }
-  
+
   article header h1 {
-    font-weight: bold; 
+    font-weight: bold;
   }
-  
+
+  article p {
+    line-height: 1.5em;
+  }
+
   article header p {
     font-weight: bold;
     padding-top: .2em;
     padding-bottom: 0;
   }
-  
-  article p {
-    line-height: 1.5em;
-  }
-   
+
   body {
-   padding: 1.5em 4.5em;
+    padding: 1.5em 4.5em;
   }
-  
+
   span:first-of-type {
-   position: absolute;
-   left: 9.7em;
+    position: absolute;
+    left: 9.7em;
   }
-  
+
   article {
     max-width: 100%;
   }
-  
+
   blockquote {
     margin-left: 6em;
     padding: 0;
   }
-  
-  ol {
+
+  article ol {
     padding: 0;
     line-height: 1.5em;
   }
-  
-  article > p:last-child {
+
+  article > p:nth-last-child(1) {
     padding-bottom: 2rem;
   }
-  
-    p:nth-last-child(7) {
+
+  p:nth-last-child(7) {
     padding-top: 1.5em;
     padding-bottom: .1em;
   }
@@ -176,22 +175,20 @@ ol {
 @media only screen and (min-width: 90em) {
 
   html {
-   font-size: 1.3rem;
+    font-size: 130%;
   }
-  
+
   body {
-   padding: 0 14em;
+    padding: 0 14em;
   }
-  
+
   blockquote {
-   margin-left: 7em;
-   padding: 0;
+    margin-left: 7em;
+    padding: 0;
   }
-  
+
   span:first-of-type {
-   position: absolute;
-   left: 20em;
+    position: absolute;
+    left: 20em;
   }
-  
-  
 }
